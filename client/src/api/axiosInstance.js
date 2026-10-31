@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL:'https://skillmap-backend-lsc1.onrender.com',
+  baseURL:'https://skillmap-backend-lsc1.onrender.com/api',
   timeout: 30000,
 });
 
