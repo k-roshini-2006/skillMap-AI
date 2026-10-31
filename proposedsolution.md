@@ -6,20 +6,4 @@ SkillMap AI modern recruitment process lo unna gaps ni bridge cheyadaniki oka dy
 
 ### Visual Overview of Proposed Architecture
 
-```
-[ PDF Resume Upload ] 
-       │
-       ▼
-[ Python Engine (app.py) + pypdf ] ──► Dynamic ATS Score %
-       │
-       ▼
-[ SQLite Database (resumes.db) ] ──► State Persistence
-       │
-       ├───────────────────────┼───────────────────────┐
-       ▼                       ▼                       ▼
-[ Competency Mapping ]  [ Skill Gap Analysis ]  [ Direct Course Links ]
-                                                       │
-                                                       ▼
-                                            [ Job Gatekeeper (>= 60%) ]
-
-```
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/07b67491-38fb-404d-bfee-7f99c2f5ecfd" />
