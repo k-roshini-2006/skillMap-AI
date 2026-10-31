@@ -95,12 +95,17 @@ npm run dev
 
 ## 👥 Team Contributions
 
-* **K. Roshini (Lead Architect & Full-Stack Developer)**
-  - Designed local PDF buffer extraction pipeline using Python `pypdf`.
-  - Built SQLite database persistence layer (`resumes.db`) for user state and score tracking.
-  - Implemented dynamic ATS scoring algorithms and non-generic course routing.
-  - Configured project environment, security scanning resolution, and deployment pipelines.
+Roshini K (Team Lead & Lead System Architect)
 
+Project Leadership & Core Backend: Led project direction, built the Python Flask backend (app.py), engineered pypdf resume parsing algorithms, and designed the SQLite database schema (resumes.db).
+
+Algorithm & Gatekeeper Logic: Authored the direct course platform routing (getDirectCourseUrl), implemented the 60% ATS match threshold job gatekeeper, and directed Git version control & deployment workflows.
+
+Preethi P (Frontend Architect & UI/UX Specialist)
+
+Core UI Architecture: Designed, engineered, and structured the React frontend platform, creating key user-facing modules including LearningPathPage, Dashboard, CompetencyMapping, and SkillGapAnalysis.
+
+State Synchronization & Testing: Implemented dynamic state workflows between client components and backend APIs, optimized UI responsiveness, and led full end-to-end integration testing.
 ---
 
 ## 📜 License
