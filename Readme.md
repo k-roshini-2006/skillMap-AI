@@ -7,7 +7,7 @@ SkillMap AI is an end-to-end resume analyzer, competency mapping, and career acc
 ## 🔗 Project Links
 
 - **GitHub Repository:** [https://github.com/k-roshini-2006/skillMap-AI](https://github.com/k-roshini-2006/skillMap-AI)
-- **Live Deployed Application:** [https://skillmap-ai.onrender.com](https://skillmap-ai.onrender.com)
+- **Live Deployed Application:**(https://skillmap-frontend-wf5r.onrender.com)
 
 ---
 
