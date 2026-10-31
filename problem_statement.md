@@ -1,26 +1,12 @@
+Here is the concise, 5 to 6 line **Problem Statement** in clear English, along with the visual diagram integration:
+
+---
+
 # Problem Statement: AI-Powered SkillMap & Resume Analytics Platform
 
-## 1. Background
-In the modern hiring ecosystem, job seekers—especially fresh graduates and early-career professionals—face severe opacity when applying for technical roles. Traditional Applicant Tracking Systems (ATS) reject resumes using rigid or poorly configured keyword matching algorithms, leaving candidates without constructive feedback or a clear understanding of why they were rejected.
+In today's competitive hiring ecosystem, job seekers—especially fresh graduates and early-career professionals—face severe opacity due to traditional Applicant Tracking Systems (ATS) that reject resumes using rigid, outdated keyword-matching algorithms without providing constructive feedback. This reliance on static text extractors results in stagnant match scores that fail to accurately capture true candidate qualifications. Furthermore, standard job portals inform candidates of missing competencies but fail to map them against industry requirements, leaving applicants to navigate fragmented upskilling routes across disparate platforms independently. Consequently, job seekers waste significant time applying for high-leverage technical roles without verifying if their current skill set meets the necessary benchmarks. **SkillMap AI** addresses this gap by offering a unified, privacy-focused platform featuring dynamic ATS scoring, targeted skill gap analysis, direct course routing, and match-gated job applications.
 
 ---
 
-## 2. Visual Overview of Industry Pain Points
-
-![SkillMap AI Problem Visual Blueprint](./assets/problem_statement_visual.png)
-
----
-
-## 3. Core Challenges & Industry Pain Points
-
-* **Static & Inaccurate ATS Parsing:** Existing resume screeners often rely on outdated text extractors or hardcoded thresholds, resulting in stagnant match scores (e.g., rigid 35% fallbacks) that fail to accurately capture actual candidate qualifications from complex PDF formats.
-* **Lack of Actionable Skill Gap Insights:** Standard job portals inform candidates if they lack skills, but fail to map those missing competencies against industry-specific role requirements.
-* **Disjointed Upskilling & Job Application Pipelines:** Learning platforms and job search engines operate in silos. Candidates must manually identify missing skills, search for relevant courses across multiple platforms (GeeksforGeeks, Coursera, Udemy), and track their learning progress independently.
-* **Gated Career Opportunities:** Job seekers frequently waste time applying for high-leverage roles without verifying whether their current skill set meets the minimum benchmark for candidate selection.
-
----
-
-## 4. Objective & Proposed Solution
-The objective of **SkillMap AI** is to build a unified, privacy-focused, offline-first resume analytics and career acceleration platform powered by Python (`app.py`), `pypdf`, and SQLite (`resumes.db`). 
-
-The platform accurately parses candidate resumes, computes dynamic percentage-based ATS match scores, generates tailored skill gap analysis, dynamically boosts scores upon course completion, and gates job applications behind a verified **60% ATS match score threshold**.
+### Visual Overview of Challenges
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/a3e8060e-f7d6-4c6d-a4c5-3b9a15464db0" />
