@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
-import { LogIn, UserPlus, Mail, Lock, User, AlertCircle, Briefcase, Sparkles, CheckCircle2 } from 'lucide-react';
+import { LogIn, UserPlus, Mail, Lock, User, AlertCircle, Briefcase } from 'lucide-react';
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -176,22 +176,10 @@ const AuthPage = () => {
                 <UserPlus className="w-4 h-4" />
                 <span>Create Account & Start</span>
               </>
-            )}
+            )
+            }
           </button>
         </form>
-
-        {/* Demo Credentials Helper */}
-        <div className="p-3 bg-slate-800/50 rounded-xl border border-slate-800 text-[11px] text-slate-400 space-y-1">
-          <p className="font-semibold text-slate-300">Demo User Credentials:</p>
-          <div className="flex justify-between">
-            <span>Email: <code className="text-cyan-400">roshini@gmail.com</code></span>
-            <span>Pass: <code className="text-cyan-400">roshini123</code></span>
-          </div>
-          <div className="flex justify-between pt-0.5">
-            <span>Admin: <code className="text-cyan-400">admin@skillmap.ai</code></span>
-            <span>Pass: <code className="text-cyan-400">Admin@123</code></span>
-          </div>
-        </div>
       </div>
     </div>
   );
