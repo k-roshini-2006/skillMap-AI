@@ -1,26 +1,107 @@
-# Problem Statement: AI-Powered SkillMap & Resume Analytics Platform
+# 🚀 SkillMap AI - Dynamic Resume Analytics & Career Acceleration Platform
 
-## 1. Background
-In the modern hiring ecosystem, job seekers—especially fresh graduates and early-career professionals—face severe opacity when applying for technical roles. Traditional Applicant Tracking Systems (ATS) reject resumes using rigid or poorly configured keyword matching algorithms, leaving candidates without constructive feedback or a clear understanding of why they were rejected.
-
----
-
-## 2. Visual Overview of Industry Pain Points
-
-![SkillMap AI Problem Visual Blueprint](./assets/problem_statement_visual.png)
+SkillMap AI is an end-to-end resume analyzer, competency mapping, and career acceleration platform powered by a Python Flask engine, SQLite persistence, and an interactive React dashboard.
 
 ---
 
-## 3. Core Challenges & Industry Pain Points
+## 🔗 Project Links
 
-* **Static & Inaccurate ATS Parsing:** Existing resume screeners often rely on outdated text extractors or hardcoded thresholds, resulting in stagnant match scores (e.g., rigid 35% fallbacks) that fail to accurately capture actual candidate qualifications from complex PDF formats.
-* **Lack of Actionable Skill Gap Insights:** Standard job portals inform candidates if they lack skills, but fail to map those missing competencies against industry-specific role requirements.
-* **Disjointed Upskilling & Job Application Pipelines:** Learning platforms and job search engines operate in silos. Candidates must manually identify missing skills, search for relevant courses across multiple platforms (GeeksforGeeks, Coursera, Udemy), and track their learning progress independently.
-* **Gated Career Opportunities:** Job seekers frequently waste time applying for high-leverage roles without verifying whether their current skill set meets the minimum benchmark for candidate selection.
+* **GitHub Repository:** [https://github.com/k-roshini-2006/skillMap-AI](https://github.com/k-roshini-2006/skillMap-AI)
+* **Live Deployed Application:** [https://skillmap-ai.onrender.com](https://skillmap-ai.onrender.com)
 
 ---
 
-## 4. Objective & Proposed Solution
-The objective of **SkillMap AI** is to build a unified, privacy-focused, offline-first resume analytics and career acceleration platform powered by Python (`app.py`), `pypdf`, and SQLite (`resumes.db`). 
+## 🏗️ System Architecture & Data Flow
 
-The platform accurately parses candidate resumes, computes dynamic percentage-based ATS match scores, generates tailored skill gap analysis, dynamically boosts scores upon course completion, and gates job applications behind a verified **60% ATS match score threshold**.
+```text
+               +----------------------------------+
+               |     React Frontend (Vite UI)     |
+               +----------------------------------+
+                                |
+                                | (Upload PDF Resume / Auth API)
+                                v
+               +----------------------------------+
+               |   Python Flask Engine (app.py)   |
+               +----------------------------------+
+                                |
+                 +--------------+--------------+
+                 |                             |
+                 v                             v
+       +-------------------+         +--------------------+
+       |  pypdf Parsing    |         |  SQLite Database   |
+       | (Text Extraction) |         |    (resumes.db)    |
+       +-------------------+         +--------------------+
+                 |                             |
+                 +--------------+--------------+
+                                |
+                                v
+         +----------------------------------------------+
+         | Dynamic ATS Scoring & Competency Mapping     |
+         +----------------------------------------------+
+                                |
+       +------------------------+------------------------+
+       |                                                 |
+       v                                                 v
++-------------------------------+             +--------------------+
+| Skill Gap Analysis & Direct   |             | Smart Job          |
+| Platform Learning Paths       |             | Gatekeeper         |
+| (GFG, Coursera, Udemy, edX)   |             | (Unlocked >= 60%)  |
++-------------------------------+             +--------------------+
+```
+
+---
+
+## 💻 Tech Stack
+
+* **Backend Engine:** Python 3.x, Flask, SQLite3, `pypdf`, `gunicorn`, `flask-cors`
+* **Frontend UI:** React.js, Vite, Tailwind CSS, Lucide Icons, Axios
+* **State & Persistence:** LocalStorage, SQLite database session handling
+* **Routing & Direct Links:** Dynamic course mapping to GeeksforGeeks, Coursera, Udemy, edX, and LinkedIn Jobs API
+
+---
+
+## ⚡ Execution Commands & Setup Guide
+
+### 1. Repository Clone
+```bash
+git clone https://github.com/k-roshini-2006/skillMap-AI.git
+cd skillMap-AI
+```
+
+### 2. Backend Setup (Python Flask)
+```bash
+# Navigate to project root / server folder
+pip install flask pypdf python-dotenv flask-cors gunicorn
+
+# Run Backend API Server
+python app.py
+```
+*Backend runs locally at: `http://127.0.0.1:5000`*
+
+### 3. Frontend Setup (React Client)
+```bash
+# Open terminal and enter client directory
+cd client
+
+# Install NPM dependencies
+npm install
+
+# Start Vite Development Server
+npm run dev
+```
+*Frontend runs locally at: `http://localhost:5173`*
+
+---
+
+## 👥 Team Contributions
+
+* **K. Roshini (Lead Architect & Full-Stack Developer)**
+  - Designed local PDF buffer extraction pipeline using Python `pypdf`.
+  - Built SQLite database persistence layer (`resumes.db`) for user state and score tracking.
+  - Implemented dynamic ATS scoring algorithms and non-generic course routing.
+  - Configured project environment, security scanning resolution, and deployment pipelines.
+
+---
+
+## 📜 License
+This project is open-source under the MIT License.
