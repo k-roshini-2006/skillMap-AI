@@ -41,7 +41,7 @@ const AuthPage = () => {
   return (
     <div className="min-h-screen bg-slate-950 flex items-center justify-center p-4 font-sans text-slate-100">
       <div className="w-full max-w-md bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-2xl space-y-6 backdrop-blur-xl">
-        
+
         {/* Logo & Header */}
         <div className="text-center space-y-2">
           <div className="w-12 h-12 mx-auto rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-black text-slate-950 text-2xl shadow-lg shadow-cyan-500/25">
@@ -60,18 +60,16 @@ const AuthPage = () => {
           <button
             type="button"
             onClick={() => { setIsLogin(true); setError(''); }}
-            className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${
-              isLogin ? 'bg-cyan-500 text-slate-950 shadow-md font-bold' : 'text-slate-400 hover:text-slate-200'
-            }`}
+            className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${isLogin ? 'bg-cyan-500 text-slate-950 shadow-md font-bold' : 'text-slate-400 hover:text-slate-200'
+              }`}
           >
             Login
           </button>
           <button
             type="button"
             onClick={() => { setIsLogin(false); setError(''); }}
-            className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${
-              !isLogin ? 'bg-cyan-500 text-slate-950 shadow-md font-bold' : 'text-slate-400 hover:text-slate-200'
-            }`}
+            className={`flex-1 py-2 text-xs font-semibold rounded-lg transition-all ${!isLogin ? 'bg-cyan-500 text-slate-950 shadow-md font-bold' : 'text-slate-400 hover:text-slate-200'
+              }`}
           >
             Register
           </button>
