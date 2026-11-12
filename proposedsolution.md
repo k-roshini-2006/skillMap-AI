@@ -1,7 +1,10 @@
 # Proposed Solution: SkillMap AI Ecosystem
 
-SkillMap AI modern recruitment process lo unna gaps ni bridge cheyadaniki oka dynamic, offline-first career acceleration platform ni navigate chestundi. Ee platform Python Flask mariyu `pypdf` buffer parsing dwara accurate local PDF resume extraction ni performance chestundi, static keyword scores lekunda real-time dynamic ATS percentage score ni calculate chestundi. System missing competencies ni target job roles tho mapping chesi, Critical mariyu Moderate priorities ga segregate chestundi. Generic search engine redirects lekunda, candidates ki Direct GeeksforGeeks, Coursera, Udemy, edX course links provide chestundi, mariyu dynamic score boost (+6%) dwara user progress ni tracking chestundi. Final ga, Applicant profile candidate selection benchmark ni cross chesthene (Match Score >= 60%), direct LinkedIn job application links ni unlock chesi candidate time ni save chestundi.
-
+SkillMap AI navigates a dynamic, offline-first career acceleration platform to bridge the gaps in the modern recruitment process.
+This platform performs accurate local PDF resume extraction through Python Flask and `pypdf` buffer parsing, and calculates a real-time dynamic ATS percentage score instead of static keyword scores.
+The system maps missing competencies to the target job roles and segregates them into Critical and Moderate priorities.
+Without generic search-engine redirects, it provides candidates with direct GeeksforGeeks, Coursera, Udemy, and edX course links, and tracks user progress with a dynamic score boost (+6%).
+Finally, only when the applicant profile crosses the candidate selection benchmark (Match Score >= 60%), it unlocks direct LinkedIn job application links, thus saving candidate time.
 ---
 
 ### Visual Overview of Proposed Architecture
